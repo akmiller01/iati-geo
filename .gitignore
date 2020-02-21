@@ -1,0 +1,9 @@
+data/*
+sep/*
+venv
+__pycache__
+*.pyc
+output/crs.csv
+output/iati_unfiltered_agg.csv
+output/iati_unfiltered_disagg.csv
+output/output.zip
