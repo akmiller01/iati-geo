@@ -140,208 +140,80 @@ class IatiFlat(object):
             secondary_reporter = default_first(activity.xpath("reporting-org/@secondary-reporter"))
             secondary_reporter = replace_default_if_none(secondary_reporter, "0")
 
-            location_ref_arr = []
-            location_reach_arr = []
-            location_id_vocab_arr = []
-            location_id_code_arr = []
-            location_name_arr = []
-            location_description_arr = []
-            location_activity_description_arr = []
-            location_admin_vocab_arr = []
-            location_admin_level_arr = []
-            location_admin_code_arr = []
-            location_point_srsname_arr = []
-            location_point_pos_arr = []
-            location_exactness_arr = []
-            location_class_arr = []
-            location_feature_designation_arr = []
-            location_coordinates_lat_arr = []
-            location_coordinates_long_arr = []
-            location_coordinates_pres_arr = []
-            location_type_arr = []
-            location_gaz_ref_arr = []
-            location_gaz_entry_arr = []
-
             if "location" in child_tags:
                 for location in activity.xpath("location"):
-                    location_ref_arr.append(replace_default_if_none(default_first(location.xpath("@ref")), ""))
-                    location_reach_arr.append(replace_default_if_none(default_first(location.xpath("location-reach/@code")), ""))
-                    location_id_vocab_arr.append(replace_default_if_none(default_first(location.xpath("location-id/@vocabulary")), ""))
-                    location_id_code_arr.append(replace_default_if_none(default_first(location.xpath("location-id/@code")), ""))
-                    location_name_arr.append(
-                        replace_default_if_none(
-                            default_first(location.xpath("name/narrative/text()")),
-                            replace_default_if_none(default_first(location.xpath("name/text()")), "")
-                        )
+                    location_ref = replace_default_if_none(default_first(location.xpath("@ref")), "")
+                    location_reach = replace_default_if_none(default_first(location.xpath("location-reach/@code")), "")
+                    location_id_vocab = replace_default_if_none(default_first(location.xpath("location-id/@vocabulary")), "")
+                    location_id_code = replace_default_if_none(default_first(location.xpath("location-id/@code")), "")
+                    location_name = replace_default_if_none(
+                        default_first(location.xpath("name/narrative/text()")),
+                        replace_default_if_none(default_first(location.xpath("name/text()")), "")
                     )
-                    location_description_arr.append(
-                        replace_default_if_none(
-                            default_first(location.xpath("description/narrative/text()")),
-                            replace_default_if_none(default_first(location.xpath("description/text()")), "")
-                        )
+                    location_description = replace_default_if_none(
+                        default_first(location.xpath("description/narrative/text()")),
+                        replace_default_if_none(default_first(location.xpath("description/text()")), "")
                     )
-                    location_activity_description_arr.append(
-                        replace_default_if_none(
-                            default_first(location.xpath("activity-description/narrative/text()")),
-                            replace_default_if_none(default_first(location.xpath("activity-description/text()")), "")
-                        )
+                    location_activity_description = replace_default_if_none(
+                        default_first(location.xpath("activity-description/narrative/text()")),
+                        replace_default_if_none(default_first(location.xpath("activity-description/text()")), "")
                     )
-                    location_admin_vocab_arr.append(replace_default_if_none(default_first(location.xpath("administrative/@vocabulary")), ""))
-                    location_admin_level_arr.append(replace_default_if_none(default_first(location.xpath("administrative/@level")), ""))
-                    location_admin_code_arr.append(replace_default_if_none(default_first(location.xpath("administrative/@code")), ""))
-                    location_point_srsname_arr.append(replace_default_if_none(default_first(location.xpath("point/@srsName")), ""))
-                    location_point_pos_arr.append(replace_default_if_none(default_first(location.xpath("point/pos/text()")), ""))
-                    location_exactness_arr.append(replace_default_if_none(default_first(location.xpath("exactness/@code")), ""))
-                    location_class_arr.append(replace_default_if_none(default_first(location.xpath("location-class/@code")), ""))
-                    location_feature_designation_arr.append(replace_default_if_none(default_first(location.xpath("feature-designation/@code")), ""))
-                    location_coordinates_lat_arr.append(replace_default_if_none(default_first(location.xpath("coordinates/@latitude")), ""))
-                    location_coordinates_long_arr.append(replace_default_if_none(default_first(location.xpath("coordinates/@longitude")), ""))
-                    location_coordinates_pres_arr.append(replace_default_if_none(default_first(location.xpath("coordinates/@precision")), ""))
-                    location_type_arr.append(replace_default_if_none(default_first(location.xpath("location-type/@code")), ""))
-                    location_gaz_ref_arr.append(replace_default_if_none(default_first(location.xpath("gazetteer-entry/@gazeteer-ref")), ""))
-                    location_gaz_entry_arr.append(replace_default_if_none(default_first(location.xpath("gazetteer-entry/text()")), ""))
+                    location_admin_vocab = replace_default_if_none(default_first(location.xpath("administrative/@vocabulary")), "")
+                    location_admin_level = replace_default_if_none(default_first(location.xpath("administrative/@level")), "")
+                    location_admin_code = replace_default_if_none(default_first(location.xpath("administrative/@code")), "")
+                    location_point_srsname = replace_default_if_none(default_first(location.xpath("point/@srsName")), "")
+                    location_point_pos = replace_default_if_none(default_first(location.xpath("point/pos/text()")), "")
+                    location_exactness = replace_default_if_none(default_first(location.xpath("exactness/@code")), "")
+                    location_class = replace_default_if_none(default_first(location.xpath("location-class/@code")), "")
+                    location_feature_designation = replace_default_if_none(default_first(location.xpath("feature-designation/@code")), "")
+                    location_coordinates_lat = replace_default_if_none(default_first(location.xpath("coordinates/@latitude")), "")
+                    location_coordinates_long = replace_default_if_none(default_first(location.xpath("coordinates/@longitude")), "")
+                    location_coordinates_pres = replace_default_if_none(default_first(location.xpath("coordinates/@precision")), "")
+                    location_type = replace_default_if_none(default_first(location.xpath("location-type/@code")), "")
+                    location_gaz_ref = replace_default_if_none(default_first(location.xpath("gazetteer-entry/@gazeteer-ref")), "")
+                    location_gaz_entry = replace_default_if_none(default_first(location.xpath("gazetteer-entry/text()")), "")
 
-            location_ref = "|".join(location_ref_arr)
-            location_reach = "|".join(location_reach_arr)
-            location_id_vocab = "|".join(location_id_vocab_arr)
-            location_id_code = "|".join(location_id_code_arr)
-            location_name = "|".join(location_name_arr)
-            location_description = "|".join(location_description_arr)
-            location_activity_description = "|".join(location_activity_description_arr)
-            location_admin_vocab = "|".join(location_admin_vocab_arr)
-            location_admin_level = "|".join(location_admin_level_arr)
-            location_admin_code = "|".join(location_admin_code_arr)
-            location_point_srsname = "|".join(location_point_srsname_arr)
-            location_point_pos = "|".join(location_point_pos_arr)
-            location_exactness = "|".join(location_exactness_arr)
-            location_class = "|".join(location_class_arr)
-            location_feature_designation = "|".join(location_feature_designation_arr)
-            location_coordinates_lat = "|".join(location_coordinates_lat_arr)
-            location_coordinates_long = "|".join(location_coordinates_long_arr)
-            location_coordinates_pres = "|".join(location_coordinates_pres_arr)
-            location_type = "|".join(location_type_arr)
-            location_gaz_ref = "|".join(location_gaz_ref_arr)
-            location_gaz_entry = "|".join(location_gaz_entry_arr)
+                    defaults = {}
+                    default_tags = ["default-currency"]
+                    for tag in default_tags:
+                        if tag in activity.attrib.keys():
+                            defaults[tag] = activity.attrib[tag]
+                        elif tag in child_tags:
+                            defaults[tag] = default_first(activity.xpath("{}/@code".format(tag)))
+                        else:
+                            defaults[tag] = None
+                    troublesome_publishers = ["fco", "wwf-uk"]
+                    if publisher == "fco":
+                        defaults["default-currency"] = "GBP"
 
-            defaults = {}
-            default_tags = ["default-currency"]
-            for tag in default_tags:
-                if tag in activity.attrib.keys():
-                    defaults[tag] = activity.attrib[tag]
-                elif tag in child_tags:
-                    defaults[tag] = default_first(activity.xpath("{}/@code".format(tag)))
-                else:
-                    defaults[tag] = None
-            troublesome_publishers = ["fco", "wwf-uk"]
-            if publisher == "fco":
-                defaults["default-currency"] = "GBP"
+                    if secondary_reporter == "0":
+                        has_transactions = "transaction" in child_tags
+                        if has_transactions:
+                            transactions = activity.findall("transaction")
 
-            if secondary_reporter == "0":
-                has_transactions = "transaction" in child_tags
-                if has_transactions:
-                    transactions = activity.findall("transaction")
-
-                    for transaction in transactions:
-                        transaction_type_code = default_first(transaction.xpath("transaction-type/@code"))
-                        if transaction_type_code in ["E", "D", "3", "4"]:
-                            transaction_date = default_first(transaction.xpath("transaction-date/@iso-date"))
-                            try:
-                                year = int(transaction_date[:4]) if transaction_date is not None else None
-                            except ValueError:
-                                year = None
-
-                            currency = default_first(transaction.xpath("value/@currency"))
-                            currency = replace_default_if_none(currency, defaults["default-currency"])
-                            if currency is not None:
-                                currency = currency.replace(" ", "")
-                            if publisher in troublesome_publishers:
-                                currency = defaults["default-currency"]
-
-                            value = default_first(transaction.xpath("value/text()"))
-                            try:
-                                value = float(value.replace(" ", "")) if value is not None else None
-                            except ValueError:
-                                value = None
-                            budget_type = None
-                            b_or_t = "Transaction"
-
-                            if value:
-                                if currency in self.dictionaries["ratedf"]:
-                                    converted_value = convert_usd(value, year, currency, self.dictionaries["ratedf"])
-                                else:
-                                    pdb.set_trace()
-                                # ["year","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
-                                row = [
-                                    year,
-                                    transaction_type_code,
-                                    converted_value,
-                                    b_or_t,
-                                    budget_type,
-                                    iati_identifier,
-                                    location_ref,
-                                    location_reach,
-                                    location_id_vocab,
-                                    location_id_code,
-                                    location_name,
-                                    location_description,
-                                    location_activity_description,
-                                    location_admin_vocab,
-                                    location_admin_level,
-                                    location_admin_code,
-                                    location_point_srsname,
-                                    location_point_pos,
-                                    location_exactness,
-                                    location_class,
-                                    location_feature_designation,
-                                    location_coordinates_lat,
-                                    location_coordinates_long,
-                                    location_coordinates_pres,
-                                    location_type,
-                                    location_gaz_ref,
-                                    location_gaz_entry
-                                ]
-                                output.append(row)
-
-                    # Loop through budgets, and capture as close equivalents as we can to transactions
-                    budget_output = []
-                    has_budget = "budget" in child_tags
-                    if has_budget:
-                        budgets = activity.findall("budget")
-
-                        for budget in budgets:
-                            transaction_type_code = None
-                            if "type" in budget.attrib.keys():
-                                budget_type = budget.attrib["type"]
-                            else:
-                                budget_type = None
-
-                            transaction_date = default_first(budget.xpath("period-start/@iso-date"))
-                            transaction_date_end = default_first(budget.xpath("period-end/@iso-date"))
-                            time_range = {}
-                            try:
-                                time_range["start"] = dateutil.parser.parse(transaction_date)
-                                time_range["end"] = dateutil.parser.parse(transaction_date_end)
-                            except (TypeError, ValueError) as error:
-                                time_range["start"] = None
-                                time_range["end"] = None
-                            if time_range["start"] is not None:
-                                time_range["length"] = time_range["end"]-time_range["start"]
-                                if time_range["length"] < datetime.timedelta(370):
-                                    year = time_range["start"].year
-
-                                    value = default_first(budget.xpath("value/text()"))
+                            for transaction in transactions:
+                                transaction_type_code = default_first(transaction.xpath("transaction-type/@code"))
+                                if transaction_type_code in ["E", "D", "3", "4"]:
+                                    transaction_date = default_first(transaction.xpath("transaction-date/@iso-date"))
                                     try:
-                                        value = float(value.replace(" ", "")) if value is not None else None
+                                        year = int(transaction_date[:4]) if transaction_date is not None else None
                                     except ValueError:
-                                        value = None
-                                    currency = default_first(budget.xpath("value/@currency"))
+                                        year = None
+
+                                    currency = default_first(transaction.xpath("value/@currency"))
                                     currency = replace_default_if_none(currency, defaults["default-currency"])
                                     if currency is not None:
                                         currency = currency.replace(" ", "")
                                     if publisher in troublesome_publishers:
                                         currency = defaults["default-currency"]
 
-                                    b_or_t = "Budget"
+                                    value = default_first(transaction.xpath("value/text()"))
+                                    try:
+                                        value = float(value.replace(" ", "")) if value is not None else None
+                                    except ValueError:
+                                        value = None
+                                    budget_type = None
+                                    b_or_t = "Transaction"
 
                                     if value:
                                         if currency in self.dictionaries["ratedf"]:
@@ -378,51 +250,129 @@ class IatiFlat(object):
                                             location_gaz_ref,
                                             location_gaz_entry
                                         ]
-                                        meta = {"row": row, "time_range": time_range, "budget_type": budget_type}
-                                        budget_output.append(meta)
-                    if len(budget_output) > 1:
-                        overlaps = []
-                        spoiled = False
-                        keep_indexes = list(range(0, len(budget_output)))
-                        # All possible combinations of 2
-                        for i in range(0, len(budget_output)):
-                            if i+1 < len(budget_output):
-                                for j in range(i+1, len(budget_output)):
-                                    first_budget = budget_output[i]
-                                    second_budget = budget_output[j]
-                                    if second_budget["time_range"]["end"] <= first_budget["time_range"]["end"] and second_budget["time_range"]["end"] >= first_budget["time_range"]["start"]:
-                                        overlaps.append((i, j))
+                                        output.append(row)
+
+                            # Loop through budgets, and capture as close equivalents as we can to transactions
+                            budget_output = []
+                            has_budget = "budget" in child_tags
+                            if has_budget:
+                                budgets = activity.findall("budget")
+
+                                for budget in budgets:
+                                    transaction_type_code = None
+                                    if "type" in budget.attrib.keys():
+                                        budget_type = budget.attrib["type"]
+                                    else:
+                                        budget_type = None
+
+                                    transaction_date = default_first(budget.xpath("period-start/@iso-date"))
+                                    transaction_date_end = default_first(budget.xpath("period-end/@iso-date"))
+                                    time_range = {}
+                                    try:
+                                        time_range["start"] = dateutil.parser.parse(transaction_date)
+                                        time_range["end"] = dateutil.parser.parse(transaction_date_end)
+                                    except (TypeError, ValueError) as error:
+                                        time_range["start"] = None
+                                        time_range["end"] = None
+                                    if time_range["start"] is not None:
+                                        time_range["length"] = time_range["end"]-time_range["start"]
+                                        if time_range["length"] < datetime.timedelta(370):
+                                            year = time_range["start"].year
+
+                                            value = default_first(budget.xpath("value/text()"))
+                                            try:
+                                                value = float(value.replace(" ", "")) if value is not None else None
+                                            except ValueError:
+                                                value = None
+                                            currency = default_first(budget.xpath("value/@currency"))
+                                            currency = replace_default_if_none(currency, defaults["default-currency"])
+                                            if currency is not None:
+                                                currency = currency.replace(" ", "")
+                                            if publisher in troublesome_publishers:
+                                                currency = defaults["default-currency"]
+
+                                            b_or_t = "Budget"
+
+                                            if value:
+                                                if currency in self.dictionaries["ratedf"]:
+                                                    converted_value = convert_usd(value, year, currency, self.dictionaries["ratedf"])
+                                                else:
+                                                    pdb.set_trace()
+                                                # ["year","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
+                                                row = [
+                                                    year,
+                                                    transaction_type_code,
+                                                    converted_value,
+                                                    b_or_t,
+                                                    budget_type,
+                                                    iati_identifier,
+                                                    location_ref,
+                                                    location_reach,
+                                                    location_id_vocab,
+                                                    location_id_code,
+                                                    location_name,
+                                                    location_description,
+                                                    location_activity_description,
+                                                    location_admin_vocab,
+                                                    location_admin_level,
+                                                    location_admin_code,
+                                                    location_point_srsname,
+                                                    location_point_pos,
+                                                    location_exactness,
+                                                    location_class,
+                                                    location_feature_designation,
+                                                    location_coordinates_lat,
+                                                    location_coordinates_long,
+                                                    location_coordinates_pres,
+                                                    location_type,
+                                                    location_gaz_ref,
+                                                    location_gaz_entry
+                                                ]
+                                                meta = {"row": row, "time_range": time_range, "budget_type": budget_type}
+                                                budget_output.append(meta)
+                            if len(budget_output) > 1:
+                                overlaps = []
+                                spoiled = False
+                                keep_indexes = list(range(0, len(budget_output)))
+                                # All possible combinations of 2
+                                for i in range(0, len(budget_output)):
+                                    if i+1 < len(budget_output):
+                                        for j in range(i+1, len(budget_output)):
+                                            first_budget = budget_output[i]
+                                            second_budget = budget_output[j]
+                                            if second_budget["time_range"]["end"] <= first_budget["time_range"]["end"] and second_budget["time_range"]["end"] >= first_budget["time_range"]["start"]:
+                                                overlaps.append((i, j))
+                                                if i in keep_indexes:
+                                                    keep_indexes.remove(i)
+                                                if j in keep_indexes:
+                                                    keep_indexes.remove(j)
+                                            elif second_budget["time_range"]["start"] >= first_budget["time_range"]["start"] and second_budget["time_range"]["start"] <= first_budget["time_range"]["end"]:
+                                                overlaps.append((i, j))
+                                                if i in keep_indexes:
+                                                    keep_indexes.remove(i)
+                                                if j in keep_indexes:
+                                                    keep_indexes.remove(j)
+                                if len(overlaps) > 1:
+                                    for i, j in overlaps:
+                                        # If we've happened to put them back in the queue, take them out
                                         if i in keep_indexes:
                                             keep_indexes.remove(i)
                                         if j in keep_indexes:
                                             keep_indexes.remove(j)
-                                    elif second_budget["time_range"]["start"] >= first_budget["time_range"]["start"] and second_budget["time_range"]["start"] <= first_budget["time_range"]["end"]:
-                                        overlaps.append((i, j))
-                                        if i in keep_indexes:
-                                            keep_indexes.remove(i)
-                                        if j in keep_indexes:
-                                            keep_indexes.remove(j)
-                        if len(overlaps) > 1:
-                            for i, j in overlaps:
-                                # If we've happened to put them back in the queue, take them out
-                                if i in keep_indexes:
-                                    keep_indexes.remove(i)
-                                if j in keep_indexes:
-                                    keep_indexes.remove(j)
-                                budget1 = budget_output[i]
-                                budget2 = budget_output[j]
-                                # Only keep overlaps if one is revised and one is original
-                                if budget1["budget_type"] == "1" and budget2["budget_type"] == "2":
-                                    keep_indexes.append(j)
-                                elif budget1["budget_type"] == "2" and budget2["budget_type"] == "1":
-                                    keep_indexes.append(i)
-                                elif budget1["budget_type"] == budget2["budget_type"]:
-                                    spoiled = True
-                        if not spoiled:
-                            for keep_index in keep_indexes:
-                                output.append(budget_output[keep_index]["row"])
-                    elif len(budget_output) == 1:
-                        # only one budget
-                        output.append(budget_output[0]["row"])
+                                        budget1 = budget_output[i]
+                                        budget2 = budget_output[j]
+                                        # Only keep overlaps if one is revised and one is original
+                                        if budget1["budget_type"] == "1" and budget2["budget_type"] == "2":
+                                            keep_indexes.append(j)
+                                        elif budget1["budget_type"] == "2" and budget2["budget_type"] == "1":
+                                            keep_indexes.append(i)
+                                        elif budget1["budget_type"] == budget2["budget_type"]:
+                                            spoiled = True
+                                if not spoiled:
+                                    for keep_index in keep_indexes:
+                                        output.append(budget_output[keep_index]["row"])
+                            elif len(budget_output) == 1:
+                                # only one budget
+                                output.append(budget_output[0]["row"])
 
         return output
