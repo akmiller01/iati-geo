@@ -8,7 +8,7 @@ setwd(wd)
 
 agg <- fread("iati_unfiltered_agg.csv")
 
-location_names = subset(agg,location_coordinates_lat=="" & location_point_pos=="" & location_name!="")
+location_names = subset(agg,is.na(location_coordinates_lat) & location_point_pos=="" & location_name!="")
 v1_points = subset(agg,location_coordinates_lat!="")
 v2_points = subset(agg,location_point_pos!="")
 
