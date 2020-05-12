@@ -79,6 +79,10 @@ def convert_usd(value, year, currency, ratedf):
 class IatiFlat(object):
     def __init__(self):
         self.header = [
+            "reporting_org",
+            "recipient_country",
+            "recipient_country_code",
+            "sector_code",
             "year",
             "transaction_type",
             "usd_disbursement",
@@ -139,7 +143,11 @@ class IatiFlat(object):
 
             secondary_reporter = default_first(activity.xpath("reporting-org/@secondary-reporter"))
             secondary_reporter = replace_default_if_none(secondary_reporter, "0")
-
+            reporting_org = replace_default_if_none(default_first(activity.xpath("reporting-org/narrative/text()")), "")
+            recipient_country = replace_default_if_none(default_first(activity.xpath("recipient-country/narrative/text()")), "")
+            recipient_country_code = replace_default_if_none(default_first(activity.xpath("recipient-country/@code")), "")
+            sector_code = replace_default_if_none(default_first(activity.xpath("sector/@code")), "")
+            
             if "location" in child_tags:
                 for location in activity.xpath("location"):
                     location_ref = replace_default_if_none(default_first(location.xpath("@ref")), "")
@@ -222,6 +230,10 @@ class IatiFlat(object):
                                             pdb.set_trace()
                                         # ["year","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
                                         row = [
+                                            reporting_org,
+                                            recipient_country,
+                                            recipient_country_code,
+                                            sector_code,
                                             year,
                                             transaction_type_code,
                                             converted_value,
@@ -300,6 +312,10 @@ class IatiFlat(object):
                                                     pdb.set_trace()
                                                 # ["year","transaction_type","usd_disbursement","budget_or_transaction","budget_type","iati_identifier"]
                                                 row = [
+                                                    reporting_org,
+                                                    recipient_country,
+                                                    recipient_country_code,
+                                                    sector_code,
                                                     year,
                                                     transaction_type_code,
                                                     converted_value,
