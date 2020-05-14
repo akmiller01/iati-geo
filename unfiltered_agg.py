@@ -83,6 +83,7 @@ class IatiFlat(object):
             "recipient_country",
             "recipient_country_code",
             "sector_code",
+            "activity_scope",
             "year",
             "transaction_type",
             "usd_disbursement",
@@ -147,6 +148,7 @@ class IatiFlat(object):
             recipient_country = replace_default_if_none(default_first(activity.xpath("recipient-country/narrative/text()")), "")
             recipient_country_code = replace_default_if_none(default_first(activity.xpath("recipient-country/@code")), "")
             sector_code = replace_default_if_none(default_first(activity.xpath("sector/@code")), "")
+            activity_scope = replace_default_if_none(default_first(activity.xpath("activity-scope/@code")), "")
             
             if "location" in child_tags:
                 for location in activity.xpath("location"):
@@ -234,6 +236,7 @@ class IatiFlat(object):
                                             recipient_country,
                                             recipient_country_code,
                                             sector_code,
+                                            activity_scope,
                                             year,
                                             transaction_type_code,
                                             converted_value,
@@ -316,6 +319,7 @@ class IatiFlat(object):
                                                     recipient_country,
                                                     recipient_country_code,
                                                     sector_code,
+                                                    activity_scope,
                                                     year,
                                                     transaction_type_code,
                                                     converted_value,
