@@ -1,0 +1,20 @@
+
+Call:
+lm(formula = total_spent_per_cap ~ value1 + value5 + value1 * 
+    value5, data = lm_df)
+
+Residuals:
+      1       2       3       4       5       6       7 
+  4.165  -9.048  25.425  -6.428 -12.692  -6.618   5.196 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+(Intercept)      101.0      284.8   0.355    0.746
+value1           409.6     4722.6   0.087    0.936
+value5           -68.4      394.5  -0.173    0.873
+value1:value5   -756.9     7195.6  -0.105    0.923
+
+Residual standard error: 18.43 on 3 degrees of freedom
+Multiple R-squared:  0.1477,	Adjusted R-squared:  -0.7045 
+F-statistic: 0.1733 on 3 and 3 DF,  p-value: 0.908
+

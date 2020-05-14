@@ -12,12 +12,10 @@ setwd(wd)
 
 # Read in from the MICS recode activity
 
-{
-  install.packages(c("rgeos","maptools","countrycode"))
-  library(rgeos)
-  library(maptools)
-  library(countrycode)
-}
+list.of.packages <- c("rgdal","leaflet","data.table","ggplot2","tmap","sf","tmaptools","countrycode","openxlsx","grDevices","reshape2","rgeos")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+lapply(list.of.packages, require, character.only=T)
 
 load("C:/git/MICS_recode/project_data/ITEP_HC_mics.RData")
 load("C:/git/MICS_recode/project_data/ITEP_HC_mics_vars.RData")
@@ -27,7 +25,7 @@ list2env(longlist,.GlobalEnv)
 names(varlist)=c("CMR","GIN","BGD")
 list2env(varlist,.GlobalEnv)
 
-#### Analysis by country ####
+#### Health analysis by country ####
 
 for (country in names(longlist)){
   
@@ -38,7 +36,7 @@ for (country in names(longlist)){
   
   # Extract points from IATI dataset for transaction activities
   
-  entries=data.frame(subset(all_entries.dt,all_entries.dt$recipient_country_code==iso2&all_entries.dt$'budget_or_transaction'=="Transaction"))
+  entries=data.frame(subset(all_transactions.dt,all_transactions.dt$recipient_country_code==iso2&substr(all_transactions.dt$sector_code,1,2)=="12"&!(is.na(all_transactions.dt$long))))
   coordinates(entries)<- ~ long + lat
   proj4string(entries) <- proj4string(regions)
   entries=data.table(cbind(as.data.frame(entries),over(entries,regions)))[,.(total_spent=sum(usd_disbursement, na.rm=TRUE)),by=.(NAME_1)]
@@ -89,7 +87,7 @@ for (country in names(longlist)){
   
   data_holder_CA5=subset(data_holder,data_holder$ch.CA5==1)
   country_data = data.table(data_holder)[,.(
-    value1=mean(as.numeric(ch.CA1.count),na.rm=T),value5=mean(as.numeric(ch.CA5.count),na.rm=T)),by=.(HH7)]
+    value1=mean(as.numeric(ch.CA1.count),na.rm=T),value5=mean(as.numeric(ch.CA5.count),na.rm=T),value1.count=sum(!is.na(ch.CA1.count),na.rm=T),value5.count=sum(!is.na(ch.CA5.count),na.rm=T),count=.N),by=.(HH7)]
   country_data_CA6 = data.table(data_holder_CA5)[,.(value6=mean(grepl("A|B",ch.CA6)),count=.N),by=.(HH7)]
   names(country_data)[1]=c("region")
   names(country_data_CA6)[1]=c("region")
@@ -102,7 +100,13 @@ for (country in names(longlist)){
   merged <- merge(regions,country_data,by = "region")
   merged <- merge(merged,entries,by = "region")
   merged <- merge(merged,country_data_CA6,by = "region")
-
+  
+  lm_df=merged@data
+  model <- lm(total_spent_per_cap ~ value1 + value5 + value1*value5, data=lm_df)
+  summary(model)
+  out <- capture.output(summary(model))
+  cat(out, file= paste0("country-analysis/maps/",country,"/output/lm_summary.txt"),sep="\n")
+  
   # Graphs
   CA1 <- tmap::tm_shape(merged) + 
     tmap::tm_polygons(col = "value1",style = "cat",palette = palette_CA,
@@ -145,7 +149,7 @@ for (country in names(longlist)){
   
   Spending <- tmap::tm_shape(merged) + 
     tmap::tm_polygons(col = "total_spent_per_cap",style = "cat",palette = palette_CA,
-                      title = paste0("Total ODA spend per capita in regions of ",country)) +
+                      title = paste0("Total Health ODA spend per capita in regions of ",country)) +
     # tmap::tm_text(c("total_spent_per_cap"),size = 0.7) +
     tmap::tm_layout(legend.title.size = 1,
                     legend.text.size = 0.6,
