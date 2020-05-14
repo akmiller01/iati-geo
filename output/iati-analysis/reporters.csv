@@ -1,219 +1,244 @@
-"","reporting_org","total_entries","total_spent","geolocation_entries","exactness_entries","check","exactness_percentage"
-"1",NA,12526,204210451675.75,12526,11917,1,0.951381127255309
-"2","Koepel van de Vlaamse Noord-Zuidbeweging 11.11.11 VZW",134,15002929.7176,134,0,1,0
+"","reporting_org","total_entries","total_spent","geolocation_entries","exactness_entries","geolocation_percentage","exactness_percentage"
+"1",NA,15686,211942873694.884,12526,11917,0.798546474563305,0.75972204513579
+"2","Koepel van de Vlaamse Noord-Zuidbeweging 11.11.11 VZW",140,15449329.569,134,0,0.957142857142857,0
 "3","Autre Terre asbl",146,10599755.94478,146,0,1,0
 "4","ACODEV",9,3112542.906142,9,0,1,0
 "5","Association for Cultural, Technical & Educational Cooperation",336,34380395.780163,336,0,1,0
 "6","Auto-Développement Afrique",4,395191.500685,4,0,1,0
 "7","AFD",5522,25263042342.1805,5522,0,1,0
-"8","African Development Bank Group",160409,164758704330.304,160409,42877,1,0.267297969565299
+"8","African Development Bank Group",116738,126560718915.95,116738,28238,1,0.241892100258699
 "9","AFRICALIA",86,5046076.671199,86,0,1,0
 "10","Age International UK (HelpAge International UK)",6,828886.3474,6,0,1,0
 "11","AgriProFocus",858,16539936.531261,858,0,1,0
 "12","AidData",176394,6686536769421.82,176394,170461,1,0.966365069106659
 "13","Akvo Foundation",241,7839256.375585,241,0,1,0
-"14","Amref Health Africa - UK",242,84726284.0203952,242,0,1,0
-"15","Amref Flying Doctors",146,37201660.5381,146,0,1,0
+"14","Amref Health Africa - UK",338,162175966.663989,242,0,0.715976331360947,0
+"15","Amref Flying Doctors",151,37675549.4216,146,0,0.966887417218543,0
 "16","Association pour la Promotion de l'Education et de la Formation à l'Etranger",170,97187675.459035,170,56,1,0.329411764705882
 "17","Académie de recherche et d'enseignement supérieur - ARES",1040,634995409.091112,1040,17,1,0.0163461538461538
-"18","Asian Development Bank",165845,789475594886.593,165845,0,1,0
-"19","Avocats Sans Frontières",163,12869555.3519403,163,0,1,0
-"20","Anti-Slavery International",37,1303358.754907,37,0,1,0
-"21","Bees Abroad UK",17,362220.5112,17,0,1,0
-"22","Broederlijk Delen",1404,99884922.8849,1404,0,1,0
-"23","Directorate-general Development Cooperation and Humanitarian Aid",576,672273231.232376,576,0,1,0
-"24","UK - Department for Business, Energy and Industrial Strategy",6,9738847.2328,6,0,1,0
-"25","Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)",9703,49543940401.315,9703,0,1,0
-"26","Federal Ministry for Economic Cooperation and Development",545,1699777500.45467,545,0,1,0
-"27","Bond",102,17362042.279748,102,0,1,0
-"28","BOS+ tropen",168,7838683.51001,168,0,1,0
-"29","BRITISH COUNCIL",740,40844527.34182,740,0,1,0
-"30","Comité pour l'abolition des dettes illégitimes",6,902727.705543,6,0,1,0
-"31","Crown Agents Limited",222,174718667.818425,222,0,1,0
-"32","Caritas Denmark",26,1335109.545,26,0,1,0
-"33","Chaîne de l'Espoir Belgique / Keten van Hoop België / Chain of Hope Belgium",13,941327.253387,13,4,1,0.307692307692308
-"34","Coopération Education Culture",13,295089.582316,13,0,1,0
-"35","ChildHopeUK",253,19040413.514491,253,0,1,0
-"36","Caritas International (Belgium)",118,17176123.868647,118,0,1,0
-"37","CARE International Switzerland Sudan",78,263819.2975,78,0,1,0
-"38","COMMISSION JUSTICE ET PAIX ASBL (cjp)",6,1005684.527829,6,0,1,0
-"39","Centre National de Coopération au Développement",12,4473146.967401,12,0,1,0
-"40","Coffey International Development Ltd, A Tetra Tech Company",10,4790880.60629,10,0,1,0
-"41","The Commonwealth Secretariat",842614,595209873.089893,842614,0,1,0
-"42","Concordis International",18,568548.227105,18,0,1,0
-"43","Congodorpen vzw",120,7106037.378192,120,0,1,0
-"44","Cordaid",238,33173002.845352,238,0,1,0
-"45","COWI",14,3300183.94831,14,0,1,0
-"46","Croix-Rouge de Belgique Communauté francophone - Activités internationales ASBL",115,23753662.2246,115,0,1,0
-"47","CREHPA",1,20597.47,1,0,1,0
-"48","Collectif Stratégies Alimentaires",13,1097367.0972,13,0,1,0
-"49","Dorcas Aid International",27,5654059.597018,27,0,1,0
-"50","DAI Europe",1129,21378042.230228,1129,0,1,0
-"51","Damien Foundation/Action Damien/Damiaanactie",44,68279613.181943,44,0,1,0
-"52","Development Aid from People to People",16,1490148.254549,16,0,1,0
-"53","Défi Belgique Afrique",2,183486.834534,2,0,1,0
-"54","Department for Environment, Food, and Rural Affairs",85,4142115.010102,85,0,1,0
-"55","Deltares",50,892830.536943493,50,0,1,0
-"56","David Gordon Memorial Hospital",5,72770.8836,5,5,1,1
-"57","UK - Department of Health and Social Care (DHSC)",4,2892503.613915,4,0,1,0
-"58","UK - Department for International Trade",6,1829502.1606,6,0,1,0
-"59","Djapo",2,2064953.1883,2,2,1,1
-"60","Danish Refugee Council",88,17395942.6157,88,0,1,0
-"61","Dynamo International asbl",4,947295.201538,4,0,1,0
-"62","European Bank for Reconstruction and Development",654,6387970567.14331,654,0,1,0
-"63","Echos Communication",6,607883.762928,6,0,1,0
-"64","European Commission - Development and Cooperation-EuropeAid",76182,41330689625.2084,76182,0,1,0
-"65","European Commission ¿ Service for Foreign Policy Instruments",1572,1321738733.8701,1572,0,1,0
-"66","European Commission ¿ DG Neighbourhood and Enlargement Negotiations",16062,12400785284.0189,16062,0,1,0
-"67","Eclosio asbl",182,16496018.812425,182,0,1,0
-"68","Ecorys ",20,8835516,20,0,1,0
-"69","Education development Trust",450,23257662.1945,450,0,1,0
-"70","Entraide et Fraternité",313,9843418.134762,313,0,1,0
-"71","Ethiopian Horticulture Producer Exporters Association",1,666511.96251,1,1,1,1
-"72","EMMS International",435,8720794.812563,435,388,1,0.891954022988506
-"73","Ethiopiaid",24,3493336.8495,24,0,1,0
-"74","Enfance Tiers Monde / Kinderen Derde Wereld",16,1778988.4028,16,0,1,0
-"75","Fairtrade Belgium vzw",4,797950.911471,4,0,1,0
-"76","Fiabel",7,236128.053176,7,0,1,0
-"77","FORMATION DE CADRES AFRICAINS KADERVORMING VOOR AFRIKANEN",113,2700187.5665088,113,0,1,0
-"78","FONDS VOOR ONTWIKKELINGSSAMENWERKING - SOCIALISTISCHE SOLIDARITEIT VZW",630,37362035.926095,630,142,1,0.225396825396825
-"79","MAEDI",2436,477589180.110527,2436,0,1,0
-"80","Forum Universitaire pour la Coopération Internationale au Développement",8,299128.9856,8,0,1,0
-"81","Foreign Affairs, Trade and Development Canada (DFATD)",71723,78250370441.6776,71723,543,1,0.00757079319046889
-"82","The Global Alliance for Vaccination and Immunisation",10670,13013346013,10670,10670,1,1
-"83","GEOMOUN",55,2407546.5046,55,0,1,0
-"84","Global Green Growth Institute",114,59485642.28,114,0,1,0
-"85","GROUPE PIVOT SANTE POPULATION",28,1605799.2168,28,0,1,0
-"86","Heifer Nederland",69,5199841.6123,69,0,1,0
-"87","Haiti Hospital Appeal",70,366131.037528,70,0,1,0
-"88","Handicap International Belgique",36,8235308.401191,36,14,1,0.388888888888889
-"89","Health Poverty Action",24,1519743.3386,24,0,1,0
-"90","Inter-American Development Bank",280950,678181235349,280950,215838,1,0.768243459690336
-"91","International Bureau of Fiscal Documentation (IBFD)",13,739127.8653,13,4,1,0.307692307692308
-"92","Foundation ICCO",2644,132942797.1089,2644,1531,1,0.579046898638427
-"93","ICF Consulting Services Ltd.",876,30314144.941514,876,0,1,0
-"94","World Agroforestry Centre",210,177031490.75,210,0,1,0
-"95","International Committee of the Red Cross",49266,36700860812.0741,49266,35486,1,0.720293914667316
-"96","Iles de Paix",34,5352992.143105,34,0,1,0
-"97","International Fund for Agricultural Development",72187,10176212929.2282,72187,72187,1,1
-"98","Institute for International Workers' Education",62,6144908.266334,62,0,1,0
-"99","IMC WORLDWIDE LTD",2,180273.176673,2,0,1,0
-"100","Institut National de l'Eau, Université Abomey-Calavi, Bénin",3,293495.1315,3,0,1,0
-"101","IRC International Water and Sanitation Centre",416,111688411.949365,416,0,1,0
-"102","International Rescue Committee Inc.",520,50003270.8,520,0,1,0
-"103","IRC-UK",168,56871104.012408,168,0,1,0
-"104","ITECO Centre de formation pour le développement",6,1165680.504965,6,0,1,0
-"105","Instituut voor Tropische Geneeskunde",146,57206299.55993,146,0,1,0
-"106","International Union for Conservation of Nature",118,56421587.7549,118,0,1,0
-"107","Joshua Orphan and Community Care",11,77011.7544,11,0,1,0
-"108","Kesho Kenya",41,153561.447496,41,0,1,0
-"109","Kidasha",4,45514.1022,4,0,1,0
-"110","KIYO",41,1848322.3371,41,0,1,0
-"111","Royal Netherlands Football Association",16,1054465.12,16,4,1,0.25
-"112","KPMG Advisory Limited Tanzania",18,177044.24304,18,0,1,0
-"113","The Louis Berger Group, Inc.",69,2182938.857583,69,23,1,0.333333333333333
-"114","Leonard Cheshire Disability",16,4206194.1867,16,0,1,0
-"115","Lepra",43,1090491.786728,43,0,1,0
-"116","LIGHT FOR THE WORLD BELGIUM",105,12999139.87488,105,0,1,0
-"117","Max Foundation",3,2470025.086,3,0,1,0
-"118","MERCY CORPS EUROPE",13,4977433.692916,13,0,1,0
-"119","Médecins du Monde Belgique",26,8059834.9844,26,0,1,0
-"120","Ministère de l'Economie et des Finances du Benin",127,4647900.1531,127,0,1,0
-"121","Memisa Belgique asbl",141,84533506.493361,141,0,1,0
-"122","Millennium Challenge Corporation",9561,16573567028.32,9561,8953,1,0.936408325488966
-"123","Ministry of Foreign Affairs (DGIS)",19295,15240083465.5957,19295,3014,1,0.156206271054677
-"124","Miel Maya Honing asbl",42,782695.6339,42,0,1,0
-"125","Le Monde selon les femmes asbl",48,2057280.4079,48,0,1,0
-"126","Médecins Sans Vacances",152,36710381.683791,152,152,1,1
-"127","NGO Federation of Nepal",5,75076.848,5,0,1,0
-"128","ngo-federatie (Vlaamse federatie van ngo's voor ontwikkelingssamenwerking)",10,1833746.759197,10,0,1,0
-"129","The Netherlands Red Cross",14207,1027735706.2673,14207,0,1,0
-"130","Norwegian People's Aid",31,3196640.2371,31,0,1,0
-"131","Netherlands Space Office",17,75091240.8451,17,0,1,0
-"132","Oxfam Novib",3356,92390248.2903,3356,0,1,0
-"133","Options Consultancy Services",148,234440889.3382,148,0,1,0
-"134","Orbis Ethiopia",21,3346563.833259,21,0,1,0
-"135","Orbis International",55,4027721.784477,55,0,1,0
-"136","Orbis Charitable Trust",63,4166445.241561,63,0,1,0
-"137","Oxfam Wereldwinkels",2,1815121.865124,2,0,1,0
-"138","Oxfam Solidarité-Solidariteit",113,12558550.071058,113,0,1,0
-"139","Palliative Care Association of Malawi",6,132542.16006,6,0,1,0
-"140","Direction Nationale de l'Hydraulique",16,12261012,16,0,1,0
-"141","Promoting Equality in African Schools",3,4757474.0215,3,0,1,0
-"142","PHASE Worldwide",166,3357594.587168,166,0,1,0
-"143","Plan International Belgium",58,8826299.815,58,54,1,0.931034482758621
-"144","Plan International Netherlands",59,1103450.6795,59,0,1,0
-"145","Pontis Foundation",14,539794.846994,14,0,1,0
-"146","PRACTICA Foundation",2,36632.736712,2,0,1,0
-"147","PROTECTING FAMILIES AGAINST HIV/AIDS (PREFA)",11,2393565.379897,11,11,1,1
-"148","Protos",189,20718349.483627,189,0,1,0
-"149","Pump Aid",39,5680643.273299,39,0,1,0
-"150","Quinoa",56,1087835.38847,56,0,1,0
-"151","RAIN foundation",12,411736.09246,12,0,1,0
-"152","Rotary Clubs For Development",3,625094.6532,3,0,1,0
-"153","RCN Justice & Democratie",78,6566927.334655,78,43,1,0.551282051282051
-"154","Rikolto International SON",1559,82052233.163115,1559,0,1,0
-"155","Rikolto België VZW",2,1943864.066895,2,0,1,0
-"156","Rode Kruis-Vlaanderen Internationaal vzw",105,18140110.575912,105,92,1,0.876190476190476
-"157","Royal National Lifeboat Institution (RNLI)",3,131049.849686,3,0,1,0
-"158","Netherlands Enterprise Agency",385,231269434.6096,385,2,1,0.00519480519480519
-"159","Service Civil International branche belge",2,458864.9356,2,0,1,0
-"160","Studio Globo",4,7931089.7984,4,0,1,0
-"161","Sensorial Handicap Cooperation",24,1907417.53184,24,0,1,0
-"162","Slovak Aid",797,21711248.3468,797,0,1,0
-"163","Ministry of Finance of Slovak Republic",55,1022984.9104,55,0,1,0
-"164","Ministry of education, science, research and sport of the Slovak republic",51,3799424.0125,51,0,1,0
-"165","Ministry of interior of the Slovak Republic",32,4155090.1739,32,0,1,0
-"166","Ministry of Environment of the Slovak Republic",4,16398.5653,4,0,1,0
-"167","Ministry of Foreign and European Affairs of the Slovak Republic",33,1991473.323,33,0,1,0
-"168","State Material Reserves",2,21341.8876,2,0,1,0
-"169","Ecumenical Pastoral Headquarter of Armed Forces of the Slovak Republic",8,47940.237,8,0,1,0
-"170","SNV Netherlands Development Organisation",378,252771351.29828,378,0,1,0
-"171","Solidagro",95,7234366.884794,95,0,1,0
-"172","Solsoc",80,11222744.795985,80,0,1,0
-"173","Société Nationale des Eaux du Benin",5,184569.204,5,0,1,0
-"174","SOS FAIM",76,12146920.912018,76,0,1,0
-"175","SOS Children's Villages The Netherlands",3,972393.8675,3,0,1,0
-"176","Sightsavers",7452,343940279.83,7452,0,1,0
-"177","Stichting Vluchteling",130,34018905.7075,130,0,1,0
-"178","Street Child",46,2213799.85026953,46,0,1,0
-"179","SOS Villages d'Enfants Belgique / SOS Kinderdorpen België",36,6506566.5264,36,0,1,0
-"180","Teach A Man To Fish",10,213638.587327,10,0,1,0
-"181","Theatre for a Change UK",29,4574226.673071,29,0,1,0
-"182","Theatre for a Change Malawi",14,941419.741965,14,0,1,0
-"183","Tearfund",14,695529.742395,14,0,1,0
-"184","Transparency International Kenya",6,30678.837712,6,0,1,0
-"185","Trianglen",231,683617.109,231,177,1,0.766233766233766
-"186","Trias",627,60227011.7057,627,0,1,0
-"187","UNICEF BELGIUM National Committee",4,1135371.7531,4,0,1,0
-"188","Universitair Centrum voor Ontwikkelingssamenwerking",2,449359.738832,2,0,1,0
-"189","Ministry of Defence",35,4906750.44768,35,35,1,1
-"190","United Nations Development Programme",146204,59538748824,146204,146204,1,1
-"191","United Nations Population Fund",1423,761272333.45,1423,0,1,0
-"192","United Nations High Commissioner for Refugees (UNHCR)",11639,104070751193.12,11639,11639,1,1
-"193","United Nations Industrial Development Organization",29716,1815139101.04,29716,0,1,0
-"194","United Nations Office for the Coordination of Humanitarian Affairs",17304,9097265641.48,17304,0,1,0
-"195","United Nations Office for Project Services",14907,50147849929,14907,0,1,0
-"196","UN Women",693,7112076,693,693,1,1
-"197","U.S. Agency for International Development",4165505,2073488746494.76,4165505,0,1,0
-"198","Union des Villes et Communes de Wallonie",748,20561931.819238,748,686,1,0.917112299465241
-"199","VIA Don Bosco",308,75681817.937145,308,0,1,0
-"200","Flemish Interuniversity Council for University Development Cooperation (VLIR-UOS)",296,66376119.445816,296,0,1,0
-"201","VNG International",52,30073169.268987,52,0,1,0
-"202","VETERINAIRES SANS FRONTIERES / DIERENARTSEN ZONDER GRENZEN - BELGIUM",61,7139390.642091,61,0,1,0
-"203","VVOB Education for Development",69,51049484.0659,69,0,1,0
-"204","VVSG - Association of Flemish Cities and Municipalities",104,5132736.086768,104,0,1,0
-"205","Women's Action Group",2,17895.8,2,0,1,0
-"206","War Child Holland",1255,237704391.472382,1255,0,1,0
-"207","Women and Children First (UK)",38,647521.14649,38,0,1,0
-"208","Wemos",54,6676430.5737502,54,0,1,0
-"209","World Food Programme",17081,20840900941,17081,0,1,0
-"210","Women for Women International (UK)",297,19026874.974084,297,0,1,0
-"211","World Health Organization",33615,4721945780.15,33615,0,1,0
-"212","Wetlands International",180,14871060.3056,180,0,1,0
-"213","World Bank",1247072,3837998733269,1247072,0,1,0
-"214","World Waternet",21,6524296.3908,21,0,1,0
-"215","WSM-Wereldsolidariteit-Solidarité Mondiale",74,51988871.333051,74,0,1,0
-"216","WWF-Belgium",48,12576073.844543,48,0,1,0
-"217","Youth Business International",18,3937369.5887,18,0,1,0
-"218","ZOA",438,149794126.57648,438,159,1,0.363013698630137
+"18","Avocats Sans Frontières",163,12869555.3519403,163,0,1,0
+"19","Anti-Slavery International",37,1303358.754907,37,0,1,0
+"20","Bees Abroad UK",17,362220.5112,17,0,1,0
+"21","Broederlijk Delen",1404,99884922.8849,1404,0,1,0
+"22","Directorate-general Development Cooperation and Humanitarian Aid",576,672273231.232376,576,0,1,0
+"23","UK - Department for Business, Energy and Industrial Strategy",6,9738847.2328,6,0,1,0
+"24","Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ)",9698,49513287712.3741,9698,0,1,0
+"25","Federal Ministry for Economic Cooperation and Development",545,1699777500.45467,545,0,1,0
+"26","Bond",105,18437982.575928,102,3,0.971428571428571,0.0285714285714286
+"27","BOS+ tropen",68,3779554.167377,68,0,1,0
+"28","BRITISH COUNCIL",804,44423636.29121,740,0,0.920398009950249,0
+"29","Comité pour l'abolition des dettes illégitimes",6,902727.705543,6,0,1,0
+"30","Crown Agents Limited",4070,3203175576.67112,222,0,0.0545454545454545,0
+"31","Caritas Denmark",96,4238446.8111,26,0,0.270833333333333,0
+"32","Chaîne de l'Espoir Belgique / Keten van Hoop België / Chain of Hope Belgium",13,941327.253387,13,4,1,0.307692307692308
+"33","Coopération Education Culture",13,295089.582316,13,0,1,0
+"34","ChildHopeUK",253,19040413.514491,253,0,1,0
+"35","Caritas International (Belgium)",118,17176123.868647,118,0,1,0
+"36","CARE International Switzerland Sudan",78,263819.2975,78,0,1,0
+"37","COMMISSION JUSTICE ET PAIX ASBL (cjp)",6,1005684.527829,6,0,1,0
+"38","Centre National de Coopération au Développement",12,4473146.967401,12,0,1,0
+"39","Coffey International Development Ltd, A Tetra Tech Company",10,4790880.60629,10,0,1,0
+"40","The Commonwealth Secretariat",1110367,784363624.985412,842614,0,0.758860809083843,0
+"41","Concordis International",18,568548.227105,18,0,1,0
+"42","Congodorpen vzw",120,7106037.378192,120,0,1,0
+"43","Cordaid",559,103682457.719912,184,375,0.329159212880143,0.670840787119857
+"44","COWI",14,3300183.94831,14,0,1,0
+"45","Croix-Rouge de Belgique Communauté francophone - Activités internationales ASBL",115,23753662.2246,115,0,1,0
+"46","CREHPA",1,20597.47,1,0,1,0
+"47","Collectif Stratégies Alimentaires",13,1097367.0972,13,0,1,0
+"48","Dorcas Aid International",23,4731150.784195,11,0,0.478260869565217,0
+"49","DAI Europe",1129,21378042.230228,1129,0,1,0
+"50","Damien Foundation/Action Damien/Damiaanactie",44,68279613.181943,44,0,1,0
+"51","Development Aid from People to People",25,3077889.267197,16,0,0.64,0
+"52","Défi Belgique Afrique",2,183486.834534,2,0,1,0
+"53","Department for Environment, Food, and Rural Affairs",87,4220527.805902,85,0,0.977011494252874,0
+"54","Deltares",50,892830.536943493,50,0,1,0
+"55","UK - Department of Health and Social Care (DHSC)",4,2892503.613915,4,0,1,0
+"56","UK - Department for International Trade",6,1829502.1606,6,0,1,0
+"57","Djapo",4,2220025.3439,2,4,0.5,1
+"58","Danish Refugee Council",88,17395942.6157,88,0,1,0
+"59","Dynamo International asbl",4,947295.201538,4,0,1,0
+"60","European Bank for Reconstruction and Development",654,6387970567.14331,654,0,1,0
+"61","Echos Communication",6,607883.762928,6,0,1,0
+"62","Eclosio asbl",182,16496018.812425,182,0,1,0
+"63","Ecorys ",20,8835516,20,0,1,0
+"64","Education development Trust",450,23257662.1945,450,0,1,0
+"65","Entraide et Fraternité",313,9843418.134762,313,0,1,0
+"66","Ethiopian Horticulture Producer Exporters Association",1,666511.96251,1,1,1,1
+"67","EMMS International",435,8720794.812563,435,388,1,0.891954022988506
+"68","Ethiopiaid",24,3493336.8495,24,0,1,0
+"69","Enfance Tiers Monde / Kinderen Derde Wereld",16,1778988.4028,16,0,1,0
+"70","Fairtrade Belgium vzw",6,1329640.287598,4,0,0.666666666666667,0
+"71","Fiabel",7,236128.053176,7,0,1,0
+"72","FORMATION DE CADRES AFRICAINS KADERVORMING VOOR AFRIKANEN",113,2700187.5665088,113,0,1,0
+"73","FONDS VOOR ONTWIKKELINGSSAMENWERKING - SOCIALISTISCHE SOLIDARITEIT VZW",630,37362035.926095,630,142,1,0.225396825396825
+"74","MAEDI",2436,477589180.110527,2436,0,1,0
+"75","Forum Universitaire pour la Coopération Internationale au Développement",8,299128.9856,8,0,1,0
+"76","Foreign Affairs, Trade and Development Canada (DFATD)",22425,20966534982.8394,22425,294,1,0.0131103678929766
+"77","The Global Alliance for Vaccination and Immunisation",10670,13013346013,10670,10670,1,1
+"78","GEOMOUN",55,2407546.5046,55,0,1,0
+"79","Global Green Growth Institute",114,59485642.28,114,0,1,0
+"80","GROUPE PIVOT SANTE POPULATION",28,1605799.2168,28,0,1,0
+"81","Heifer Nederland",110,9271834.9529,69,0,0.627272727272727,0
+"82","Haiti Hospital Appeal",70,366131.037528,70,0,1,0
+"83","Handicap International Belgique",36,8235308.401191,36,14,1,0.388888888888889
+"84","Health Poverty Action",40,7459507.8726,24,0,0.6,0
+"85","Inter-American Development Bank",280950,678181235349,280950,215838,1,0.768243459690336
+"86","International Bureau of Fiscal Documentation (IBFD)",21,1042639.6169,13,6,0.619047619047619,0.285714285714286
+"87","Foundation ICCO",2644,132942797.1089,2644,1531,1,0.579046898638427
+"88","ICF Consulting Services Ltd.",876,30314144.941514,876,0,1,0
+"89","World Agroforestry Centre",210,177031490.75,210,0,1,0
+"90","International Committee of the Red Cross",36679,36558713709.5384,34447,27714,0.939147741214319,0.755582213255541
+"91","Iles de Paix",34,5352992.143105,34,0,1,0
+"92","International Fund for Agricultural Development",72187,10176212929.2282,72187,72187,1,1
+"93","Institute for International Workers' Education",62,6144908.266334,62,0,1,0
+"94","IMC WORLDWIDE LTD",2,180273.176673,2,0,1,0
+"95","Institut National de l'Eau, Université Abomey-Calavi, Bénin",3,293495.1315,3,0,1,0
+"96","IRC International Water and Sanitation Centre",416,111688411.949365,416,0,1,0
+"97","International Rescue Committee Inc.",520,50003270.8,520,0,1,0
+"98","IRC-UK",168,56871104.012408,168,0,1,0
+"99","ITECO Centre de formation pour le développement",6,1165680.504965,6,0,1,0
+"100","Instituut voor Tropische Geneeskunde",146,57206299.55993,146,0,1,0
+"101","International Union for Conservation of Nature",118,56421587.7549,118,0,1,0
+"102","Joshua Orphan and Community Care",11,77011.7544,11,0,1,0
+"103","Kesho Kenya",41,153561.447496,41,0,1,0
+"104","Kidasha",4,45514.1022,4,0,1,0
+"105","KIYO",41,1848322.3371,41,0,1,0
+"106","Royal Netherlands Football Association",16,1054465.12,16,4,1,0.25
+"107","KPMG Advisory Limited Tanzania",18,177044.24304,18,0,1,0
+"108","The Louis Berger Group, Inc.",69,2182938.857583,69,23,1,0.333333333333333
+"109","Leonard Cheshire Disability",28,5810105.508615,16,0,0.571428571428571,0
+"110","Lepra",43,1090491.786728,43,0,1,0
+"111","LIGHT FOR THE WORLD BELGIUM",105,12999139.87488,105,0,1,0
+"112","Max Foundation",3,2470025.086,3,0,1,0
+"113","MERCY CORPS EUROPE",93,21935720.760263,13,21,0.139784946236559,0.225806451612903
+"114","Médecins du Monde Belgique",26,8059834.9844,26,0,1,0
+"115","Ministère de l'Economie et des Finances du Benin",127,4647900.1531,127,0,1,0
+"116","Memisa Belgique asbl",141,84533506.493361,141,0,1,0
+"117","Millennium Challenge Corporation",9561,16573567028.32,9561,8953,1,0.936408325488966
+"118","Ministry of Foreign Affairs (DGIS)",19295,15240083465.5957,19295,3014,1,0.156206271054677
+"119","Miel Maya Honing asbl",42,782695.6339,42,0,1,0
+"120","Le Monde selon les femmes asbl",46,2014971.2004,46,0,1,0
+"121","Médecins Sans Vacances",152,36710381.683791,152,152,1,1
+"122","NGO Federation of Nepal",5,75076.848,5,0,1,0
+"123","The Netherlands Red Cross",14373,1039835930.2957,14207,0,0.988450567035414,0
+"124","Norwegian People's Aid",31,3196640.2371,31,0,1,0
+"125","Netherlands Space Office",17,75091240.8451,17,0,1,0
+"126","Oxfam Novib",3356,92390248.2903,3356,0,1,0
+"127","Options Consultancy Services",162,253054033.7864,148,0,0.91358024691358,0
+"128","Orbis Ethiopia",21,3346563.833259,21,0,1,0
+"129","Orbis International",55,4027721.784477,55,0,1,0
+"130","Orbis Charitable Trust",63,4166445.241561,63,0,1,0
+"131","Oxfam Wereldwinkels",2,1815121.865124,2,0,1,0
+"132","Oxfam Solidarité-Solidariteit",113,12558550.071058,113,0,1,0
+"133","Palliative Care Association of Malawi",6,132542.16006,6,0,1,0
+"134","Direction Nationale de l'Hydraulique",16,12261012,16,0,1,0
+"135","Promoting Equality in African Schools",3,4757474.0215,3,0,1,0
+"136","PHASE Worldwide",166,3357594.587168,166,0,1,0
+"137","Plan International Belgium",58,8826299.815,58,54,1,0.931034482758621
+"138","Plan International Netherlands",892,22873387.927,59,0,0.0661434977578475,0
+"139","Pontis Foundation",14,539794.846994,14,0,1,0
+"140","PRACTICA Foundation",2,36632.736712,2,0,1,0
+"141","PROTECTING FAMILIES AGAINST HIV/AIDS (PREFA)",11,2393565.379897,11,11,1,1
+"142","Protos",189,20718349.483627,189,0,1,0
+"143","Pump Aid",39,5680643.273299,39,0,1,0
+"144","Quinoa",56,1087835.38847,56,0,1,0
+"145","RAIN foundation",12,411736.09246,12,0,1,0
+"146","Rotary Clubs For Development",3,625094.6532,3,0,1,0
+"147","RCN Justice & Democratie",78,6566927.334655,78,43,1,0.551282051282051
+"148","Rikolto International SON",1559,82052233.163115,1559,0,1,0
+"149","Rikolto België VZW",2,1943864.066895,2,0,1,0
+"150","Rode Kruis-Vlaanderen Internationaal vzw",105,18140110.575912,105,92,1,0.876190476190476
+"151","Royal National Lifeboat Institution (RNLI)",3,131049.849686,3,0,1,0
+"152","Netherlands Enterprise Agency",386,231401366.2897,385,2,0.99740932642487,0.00518134715025907
+"153","Studio Globo",4,7931089.7984,4,0,1,0
+"154","Sensorial Handicap Cooperation",24,1907417.53184,24,0,1,0
+"155","Slovak Aid",798,21731776.978,797,0,0.99874686716792,0
+"156","Ministry of Finance of Slovak Republic",56,1023150.9004,55,0,0.982142857142857,0
+"157","Ministry of education, science, research and sport of the Slovak republic",51,3799424.0125,51,0,1,0
+"158","Ministry of interior of the Slovak Republic",33,4349175.6413,32,0,0.96969696969697,0
+"159","Ministry of Environment of the Slovak Republic",4,16398.5653,4,0,1,0
+"160","Ministry of Foreign and European Affairs of the Slovak Republic",33,1991473.323,33,0,1,0
+"161","State Material Reserves",2,21341.8876,2,0,1,0
+"162","Ecumenical Pastoral Headquarter of Armed Forces of the Slovak Republic",8,47940.237,8,0,1,0
+"163","SNV Netherlands Development Organisation",174,37290614.93148,174,0,1,0
+"164","Solidagro",95,7234366.884794,95,0,1,0
+"165","Solsoc",80,11222744.795985,80,0,1,0
+"166","Société Nationale des Eaux du Benin",5,184569.204,5,0,1,0
+"167","SOS FAIM",76,12146920.912018,76,0,1,0
+"168","SOS Children's Villages The Netherlands",3,972393.8675,3,0,1,0
+"169","Sightsavers",7452,343940279.83,7452,0,1,0
+"170","Stichting Vluchteling",134,35567516.4405,130,0,0.970149253731343,0
+"171","Street Child",46,2213799.85026953,46,0,1,0
+"172","SOS Villages d'Enfants Belgique / SOS Kinderdorpen België",36,6506566.5264,36,0,1,0
+"173","Teach A Man To Fish",10,213638.587327,10,0,1,0
+"174","Theatre for a Change UK",29,4574226.673071,29,0,1,0
+"175","Theatre for a Change Malawi",14,941419.741965,14,0,1,0
+"176","Tearfund",14,695529.742395,14,0,1,0
+"177","Transparency International Kenya",6,30678.837712,6,0,1,0
+"178","Trianglen",231,683617.109,231,177,1,0.766233766233766
+"179","Trias",627,60227011.7057,627,0,1,0
+"180","UNICEF BELGIUM National Committee",6,1651066.5856,4,0,0.666666666666667,0
+"181","Universitair Centrum voor Ontwikkelingssamenwerking",2,449359.738832,2,0,1,0
+"182","Ministry of Defence",42,5148412.274282,35,35,0.833333333333333,0.833333333333333
+"183","United Nations Development Programme",134327,58163281079,134327,134327,1,1
+"184","United Nations Population Fund",1315,610704181.07,1315,0,1,0
+"185","United Nations High Commissioner for Refugees (UNHCR)",8699,87679773290.43,8699,8699,1,1
+"186","United Nations Industrial Development Organization",29716,1815139101.04,29716,0,1,0
+"187","United Nations Office for the Coordination of Humanitarian Affairs",17114,8833878245.48,17114,0,1,0
+"188","United Nations Office for Project Services",14907,50147849929,14907,0,1,0
+"189","UN Women",612,6372844,612,612,1,1
+"190","U.S. Agency for International Development",3985265,1923441133885.51,3985265,0,1,0
+"191","Union des Villes et Communes de Wallonie",748,20561931.819238,748,686,1,0.917112299465241
+"192","VIA Don Bosco",389,89583406.352049,308,0,0.791773778920309,0
+"193","Flemish Interuniversity Council for University Development Cooperation (VLIR-UOS)",296,66376119.445816,296,0,1,0
+"194","VNG International",36,22538490.868187,36,0,1,0
+"195","VETERINAIRES SANS FRONTIERES / DIERENARTSEN ZONDER GRENZEN - BELGIUM",65,8265194.21648,61,0,0.938461538461538,0
+"196","VVOB Education for Development",69,51049484.0659,69,0,1,0
+"197","VVSG - Association of Flemish Cities and Municipalities",104,5132736.086768,104,0,1,0
+"198","Women's Action Group",2,17895.8,2,0,1,0
+"199","War Child Holland",1961,348466806.414085,1255,0,0.639979602243753,0
+"200","Women and Children First (UK)",38,647521.14649,38,0,1,0
+"201","Wemos",54,6676430.5737502,54,0,1,0
+"202","World Food Programme",17081,20840900941,17081,0,1,0
+"203","Women for Women International (UK)",299,19233428.017979,297,0,0.993311036789298,0
+"204","World Health Organization",33920,4816204647.37,33615,0,0.991008254716981,0
+"205","Wetlands International",180,14871060.3056,180,0,1,0
+"206","World Bank",1247072,3837998733269,1247072,0,1,0
+"207","World Waternet",21,6524296.3908,21,0,1,0
+"208","WSM-Wereldsolidariteit-Solidarité Mondiale",74,51988871.333051,74,0,1,0
+"209","WWF-Belgium",48,12576073.844543,48,0,1,0
+"210","Youth Business International",18,3937369.5887,18,0,1,0
+"211","ZOA",446,153614206.060404,438,159,0.982062780269058,0.356502242152466
+"212","ActionAid UK",67,6665225.301407,0,0,0,0
+"213","ADD International",182,11686715.881973,0,176,0,0.967032967032967
+"214","Stichting Agriterra",7286,140318371.945544,0,0,0,0
+"215","AIDENVIRONMENT",10,436170.914754,0,0,0,0
+"216","Amnesty International Netherlands",19,442665.516,0,0,0,0
+"217","Adam Smith International",155,30680858.823395,0,0,0,0
+"218","BDO LLP",6,414827.77502,0,0,0,0
+"219","Balloon Ventures Foundation",1,63876.341427,0,0,0,0
+"220","Cord",12,802834.525667,0,0,0,0
+"221","DCAF",2,1220050.6407,0,0,0,0
+"222","Edukans",1,65328.4808,0,0,0,0
+"223","Equileap",6,177091.964,0,0,0,0
+"224","Food for the Hungry UK",35,739597.435044,0,0,0,0
+"225","The Fred Hollows Foundation (UK)",8,175340.117998,0,0,0,0
+"226","Germany - Federal Foreign Office",8149,6892945369.88597,0,0,0,0
+"227","Friends of the Earth Ghana",8,451340.3409,0,0,0,0
+"228","The HALO Trust",96,27099798.57,0,0,0,0
+"229","ICA:UK",3,28996.0158,0,0,0,0
+"230","International Labour Organization (ILO)",3110,832786984.01,0,3110,0,1
+"231","LTS International Limited",968,2943426.661088,0,0,0,0
+"232","Ministry of Foreign Affairs and Cooperation, Spain",11742,1357845096.02686,0,0,0,0
+"233","Aidsfonds - Soaaids Nederland",428,32110497.7197,0,0,0,0
+"234","The Export-Import Bank of Korea(Economic Development Cooperation Fund)",86,422243385.3864,0,0,0,0
+"235","The Open University",16,332138.063801,0,0,0,0
+"236","Right to Play Netherlands Foundation",2,237840.676,0,0,0,0
+"237","Search for Common Ground",180,50329134.781788,0,0,0,0
+"238","Siren Associates",10,414881.999186,0,0,0,0
+"239","The federal government of the United States",367650,27437263768.97,0,367630,0,0.999945600435197
+"240","United States",7080,10856134216,0,0,0,0
+"241","War Child UK",10,1287829.607051,0,0,0,0
+"242","WWF Netherlands",3,841940.5222,0,0,0,0
+"243","World Vision UK",5,403878.8964,0,0,0,0

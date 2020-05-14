@@ -1,12 +1,15 @@
-# Instructions: Load in location_workspace below. Then, only run introduction and 'Further scoping analysis' section onwards
+# Instructions: 
+# Option 1: Load in location_workspace below. Then, only run introduction and 'Further scoping analysis' section onwards.
+# Option 2: Run the whole thing with geocoding commented out (slow).
+# Note: It is important we don't lose the geo_cache_output.df since this will be chalenging to run again (both time and duplication not being liked by the API)
 
-load("C:\git\iati-geo\location_workspace.RData")
+load("C:/git/iati-geo/location_workspace.RData")
 
 #### Introduction and initial manipulation ####
 
 # Install packages required
 
-list.of.packages <- c("rgdal","leaflet","data.table","ggplot2","tmap","sf","tmaptools","countrycode","openxlsx","grDevices","RYandexTranslate")
+list.of.packages <- c("rgdal","leaflet","data.table","ggplot2","tmap","sf","tmaptools","countrycode","openxlsx","grDevices","reshape2")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, require, character.only=T)
@@ -24,8 +27,6 @@ setwd(wd)
 #### Read in initial data ####
 
 agg <- read.csv("iati_unfiltered_agg.csv",na.strings="",as.is=T)
-agg=rbind(names(agg), data.frame((agg)))
-names(agg)=names(all_entries.dt)[1:31]
 
 # Separate data into old-style coordinates, new-style coordinates and no coordinates
 
@@ -88,11 +89,14 @@ coordinates(v2_points)=~long+lat
 
 #### Bringing together data frames of where there is a geolcation and where there is not ####
 
+no_geolocation=location_names
 v1_points.f=as.data.frame(v1_points)
 v2_points.f=as.data.frame(v2_points)
 geolocation.f=rbind(v1_points.f,v2_points.f)
 geolocation.f$geolocation_status=1
 no_geolocation.f=data.frame(no_geolocation)
+no_geolocation.f$lat=NA
+no_geolocation.f$long=NA
 no_geolocation.f$geolocation_status=0
 no_geolocation.f$optional=NULL
 all_entries=rbind(geolocation.f,no_geolocation.f)
@@ -104,16 +108,18 @@ all_entries.dt=data.table(all_entries)
 
 geolocation.f=subset(all_entries.dt,geolocation_status==1)
 no_geolocation.f=subset(all_entries.dt,geolocation_status==0)
+
 figurea=nrow(subset(geolocation.f,location_exactness==1))
 figureb=nrow(subset(geolocation.f,location_exactness==2))
 figurec=nrow(subset(geolocation.f,is.na(location_exactness)))
-figured=nrow(subset(no_geolocation.f,location_exactness==1))
-figuree=nrow(subset(no_geolocation.f,location_exactness==2))
-figuref=nrow(subset(no_geolocation.f,is.na(location_exactness)))
+
+figures=table(geolocation.f$activity_scope)
 
 #### Analysis of geolocation availability by donor and by country ####
 
-all_transactions.dt=subset(geolocation.f,geolocation.f$'budget_or_transaction'=="Transaction") # Note, I have reduced this to just gelocations and no geocoded outputs.
+all_transactions.dt=subset(all_entries.dt,all_entries.dt$'budget_or_transaction'=="Transaction"&!(all_entries.dt$activity_scope %in% c("1","2","3"))) # Filter by transactions only and national level or below (or unfilled) only.
+
+rm(list=c("geolocation.f","no_geolocation.f","figurea","figureb","figurec","figures"))
 
 # By country
 
@@ -124,6 +130,8 @@ write.csv(all_transactions_rec.dt,file="iati-analysis/recipients.csv")
 
 # By donor only
 all_transactions_rep.dt = all_transactions.dt[,.(total_entries=.N,total_spent=sum(usd_disbursement, na.rm=TRUE),geolocation_entries=sum(geolocation_status==1,na.rm=T),exactness_entries=sum(location_exactness==1,na.rm=T)),by=.(reporting_org)]
-all_transactions_rep.dt$check = all_transactions_rep.dt$geolocation_entries / all_transactions_rep.dt$total_entries
+all_transactions_rep.dt$geolocation_percentage = all_transactions_rep.dt$geolocation_entries / all_transactions_rep.dt$total_entries
 all_transactions_rep.dt$exactness_percentage = all_transactions_rep.dt$exactness_entries / all_transactions_rep.dt$total_entries
 write.csv(all_transactions_rep.dt,file="iati-analysis/reporters.csv")
+
+rm(list=c("all_transactions_rec.dt","all_transactions_rep.dt"))
